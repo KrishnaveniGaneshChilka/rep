@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Firebase realtime database CRUD example</title>
+      <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <div class='container'>
+        <div class='header'>
+          <img src="https://avatars.githubusercontent.com/u/67893987?s=400&u=0e0bb139d27798fec8ec5f541ffff09a59ca358b&v=4" width="120" height="120" alt="">
+          <h1>Krishnaveni Chilka</h1>
+          <h4>Software Developer</h4>
+        </div>
+        <h2>Reviews</h2>
+        <h4>CREATE/UPDATE</h4>
+        <form id='reviewForm'>
+          <input type="hidden" id='hiddenId' />
+          <input type="text" id='fullName' />
+          <br/>
+          <textarea id='message'></textarea>
+          <br/>
+          <button type='submit'>Add/Update review</button>
+        </form>
+        <br/>
+        <h4>READ/DELETE</h4>
+        <ul id='reviews'></ul>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-storage.js"></script>
+
+      <script src="main.js"></script>
+      <link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    </body>
+</html>
